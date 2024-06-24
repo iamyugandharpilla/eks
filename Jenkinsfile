@@ -1,8 +1,6 @@
 pipeline {
-    agent {
         agent any
-    }
-    parameters { choice(name: 'ACTION', choices: ['apply', 'destroy', 'plan'], description: '') }
+    parameters { choice(name: 'ACTION', choices: ['apply', 'destroy', 'plan'], description: 'Select the action') }
 
     stages {
         stage('git clone ') {
@@ -49,3 +47,4 @@ pipeline {
      Devops Team''', subject: 'testing jenkins pipeline: $JOB_URL', to: 'malleshdevops2021@outlook.com'
     }
     }
+}
