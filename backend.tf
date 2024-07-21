@@ -1,9 +1,9 @@
 terraform {
 
 backend "s3" {
-  bucket = "talentdevops19-statefile-backupp"
+  bucket = "eks-pipeline-bucket"
   region = "us-east-1"
   key = "terraform.tfstate"
-  dynamodb_table= "talent-devops19-tfstate" 
+  dynamodb_table= "eks-backend" 
 }
 }
