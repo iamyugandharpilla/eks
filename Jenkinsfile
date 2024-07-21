@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('git clone ') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'git@github.com:iamyugandharpilla/eks.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-access-key-private', url: 'git@github.com:iamyugandharpilla/eks.git']])
             }
         }
         stage('Initialize ') {
