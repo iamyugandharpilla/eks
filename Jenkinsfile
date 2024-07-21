@@ -7,7 +7,7 @@ pipeline {
     stages {
         stage('git clone ') {
             steps {
-                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'git@github.com:Talent-devops19/eks.git']])
+                checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'github-ssh-key', url: 'git@github.com:iamyugandharpilla/eks.git']])
             }
         }
         stage('Initialize ') {
@@ -54,7 +54,7 @@ pipeline {
      The jenkins has been failed . please check it.
 
      Thanks
-     Devops Team''', subject: 'testing jenkins pipeline: $JOB_URL', to: 'malleshdevops2021@outlook.com'
+     Devops Team''', subject: 'testing jenkins pipeline: $JOB_URL', to: 'yugandharpilla@outlook.com'
     }
     }
 }
