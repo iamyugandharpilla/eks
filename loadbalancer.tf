@@ -61,7 +61,7 @@ resource "helm_release" "lbtest" {
 
   set {
     name  = "region"
-    value = "us-west-2"
+    value = "us-east-1"
   }
 
 
