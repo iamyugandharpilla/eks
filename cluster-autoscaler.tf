@@ -8,3 +8,4 @@ module "eks-cluster-autoscaler" {
   cluster_identity_oidc_issuer_arn = module.eks.oidc_provider_arn
 }
 */
+
